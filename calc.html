@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>MAGIC CALCULATOR</h1>
+    <h3>IT DO MATH</h3><br>
+    <h2>1° NUMBER</h2><br>
+    <input id="n1" type="number"/><br/>
+    <h2>2° NUMBER</h2>
+    <input id="n2" type="number"/><br/>
+
+    The result is <span></span>
+
+    <br>
+    <button onclick="sum()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="divi()">/</button>
+
+    <script>
+        var n1 = document.querySelector('#n1')
+        var n2 = document.querySelector('#n2')
+        var result = document.querySelector('span')
+    
+        function sum(){
+            result.innerHTML = parseInt(n1.value) + parseInt(n2.value)
+                    }
+        
+        function sub(){
+            result.innerHTML = parseInt(n1.value) - parseInt(n2.value)
+        }
+
+        function divi(){
+            result.innerHTML = parseInt(n1.value) / parseInt(n2.value)
+        }
+
+        function mul(){
+            result.innerHTML = parseInt(n1.value) * parseInt(n2.value)
+        }
+    
+        
+    
+    
+    </script>
+
+    
+</body>
+</html>
